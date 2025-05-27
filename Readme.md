@@ -37,7 +37,7 @@ Want to work with me? Reach out here:
 
 - 🌐 Website: [mnqobithusi.dev](https://mnqobithusi.dev)
 - 📧 Email: [mnqobimvelas@gmail.com]
-- 🧑🏾‍💻 GitHub: [github.com/mnqobithusi](https://github.com/mnqobithusi)
+- 🧑🏾‍💻 GitHub: [github.com/mnqobithusi](https://github.com/CodexLoop)
 
 ---
 
