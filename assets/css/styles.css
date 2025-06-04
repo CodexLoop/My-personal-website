@@ -1076,10 +1076,19 @@ body.dark-theme {
   width: 100%;
 }
 
-.blog__section .article__wrapper {
+/*=============== ARTICLE SECTION ===============*/
+.article__wrapper {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0;
+  grid-template-columns: 4fr 12fr 5fr ;
+  grid-template-areas: 
+    "left-side content right-side"
+    "left-side1 content1 right-side1"
+    "left-side2 content2 right-side2"
+    "left-side3 content3 right-side3"
+    "left-side4 content4 right-side4"
+    "left-side5 content5 right-side5";
+  max-width: 1020px;
+  grid-gap: 0 50px;
 }
 
 /*=============== TEAMSPARK BLOG ===============*/
@@ -1088,17 +1097,29 @@ body.dark-theme {
   margin: auto;
   padding: 0 50px;
 }
-.article__wrapper > * {grid-column: 2 / -2;}
+/* .article__wrapper > * {grid-area: content;} */
+.article__wrapper #challenge {grid-area: content;}
+.article__wrapper #approach {grid-area: content1;}
+.article__wrapper #implementation {grid-area: content2;}
+.article__wrapper #seo {grid-area: content3;}
+.article__wrapper #lessons {grid-area: content4;}
+.article__wrapper #resources {grid-area: content5;}
+
+.article__wrapper .tip__right {grid-area: right-side3;}
+
 .article__wrapper .section {padding-block: 100px 0}
-.blog__section .section__title-1 {margin-left: 0;}
-.blog__section .section__title-2 {margin-left: 0;}
+.article__wrapper .section__title-1 {margin-left: 0;}
+.article__wrapper .section__title-2 {margin-left: 0;}
+
 
 /*=============== THE CHALLENGE ===============*/
 
+
 /*=============== THE APPROACH ===============*/
 
+
 /*=============== SEO & PERFORMANCE ===============*/
-.blog__section .tip__right {
+.article__wrapper .tip__right {
   margin-top: 120px;
   padding: .5rem;
   grid-column: span 1 / -1;
@@ -1108,8 +1129,8 @@ body.dark-theme {
 .article__wrapper img {
   position:static;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  object-fit:scale-down;
   margin-bottom: .5rem;
 }
 .article__wrapper p {
@@ -1225,7 +1246,20 @@ body.dark-theme {
     top: 90px;
   }
 
-
+  .article__wrapper {
+    grid-template-areas:
+      "content"
+      "content1"
+      "content2"
+      "content3"
+      "right-side3"
+      "content4"
+      "content5"
+      !important
+    ;
+    grid-template-columns: 1fr;
+    grid-gap: 0 50px;
+  }
 }
 
 /* For medium devices */
@@ -1274,11 +1308,6 @@ body.dark-theme {
   .projects__container {
     grid-template-columns: repeat(2, 350px);
   }
-
-  .blog__section .article__wrapper {
-    grid-template-columns: 3fr 12fr 5fr;
-    grid-gap: 0 50px;
-}
 }
 
 /* For large devices */
