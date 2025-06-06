@@ -1086,11 +1086,8 @@ h1 {font-size: var(--h1-font-size);}
 }
 
 #wrapper > * {grid-column: 2 / -2;}
-#wrapper .tip__left {grid-column: 1 / span 1;}
-#wrapper .tip__right {
-  grid-column: span 1 / -1;
-  margin-top: 100px;
-}
+#wrapper .tip__right,
+#wrapper .tip__left {display: none;}
 
 #wrapper .section {padding-block: 100px 0 !important}
 #wrapper .section__title-1 {margin-left: 0;}
@@ -1286,8 +1283,14 @@ h1 {font-size: var(--h1-font-size);}
 }
 
 @media screen and (min-width: 900px) {
-  #wrapper {grid-template-columns: max-content minmax(min-content, 3fr) 1fr;}
+  #wrapper {grid-template-columns: max-content 4fr 1fr;}
+  #wrapper .tip__left {
+    display: block;
+    grid-column: 1 / span 1;
+  }
   #wrapper .tip__right {
+    display: block;
+    grid-column: span 1 / -1;
     margin-top: 130px;
     padding: .5rem;
     border-left: 2px solid var(--yellow);
