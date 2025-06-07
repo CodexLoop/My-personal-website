@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --yellow: hsl(47, 100%, 50%);
+  --blue: rgb(0, 0, 128);
   --first-color: hsl(14, 98%, 50%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
@@ -17,6 +17,7 @@
   --text-color-light: hsl(0, 0%, 64%);
   --body-color: hsl(0, 0%, 87%);
   --container-color: hsl(0, 0%, 83%);
+  --filter-white: hsla(0, 0%, 100%, .9);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -114,6 +115,7 @@ body.dark-theme {
   --text-color: hsl(0, 0%, 70%);
   --body-color: hsl(0, 0%, 8%);
   --container-color: hsl(0, 0%, 12%);
+  --filter-white: hsla(0, 0%, 0%, .9);
 }
 
 /*========== 
@@ -280,7 +282,7 @@ body.dark-theme {
 @media screen and (max-width: 1150px) {
   .nav__menu {
     position: fixed;
-    top: -100%;
+    top: -200%;
     left: 0;
     background-color: hsla(0, 0%, 0%, .75);
     width: 100%;
@@ -1024,6 +1026,8 @@ body.dark-theme {
 /*=============== TeamSpark BLOG POST! ===============*/
 
 /*=============== HERO SECTION ===============*/
+.hero__container {max-width: 1040px;}
+
 .hero__container .wrapper {
   position: relative;
   display: flex;
@@ -1055,7 +1059,7 @@ body.dark-theme {
 .filter {
   position: relative;
   padding: 2.5rem 4rem;
-  background-color: hsla(0, 0%, 100%, .9);
+  background-color: var(--filter-white);
   text-align: center;
   flex: 0 1 650px;
   margin: 0 10%;
@@ -1073,13 +1077,14 @@ body.dark-theme {
 }
 
 h1 {font-size: var(--h1-font-size);}
+
 .hero__container .wrapper .geometric-box {display: none;}
 
 /*=============== CONTENT GLOBAL STYLES ===============*/
 #wrapper {
   display: grid;
   grid-template-columns: auto;
-  max-width: 1120px;
+  max-width: 1040px;
   grid-gap: 0 50px;
   margin: auto;
   width: 90%;
@@ -1089,23 +1094,29 @@ h1 {font-size: var(--h1-font-size);}
 #wrapper .tip__right,
 #wrapper .tip__left {display: none;}
 
-#wrapper .section {padding-block: 100px 0 !important}
+#wrapper .section {padding-block: 100px 0}
 #wrapper .section__title-1 {margin-left: 0;}
 #wrapper .section__title-2 {margin-left: 0;}
 
 #wrapper p, 
 #wrapper li {line-height: 1.8;}
 
+#wrapper .about__list {color: var(--text-color);}
+
 /*=============== THE CHALLENGE SECTION ===============*/
-#wrapper .tip__left {
-  margin-top: 130px;
-  text-decoration: underline wavy var(--yellow);
-}
+#wrapper .tip__left {margin-top: 130px;}
 
 #wrapper .links {flex-direction: column;}
 #wrapper .about__list {margin-bottom: 0;}
 
+/*=============== IMPLEMENTATION SECTION ===============*/
+#implementation p {margin-bottom: 1rem;}
+#implementation h3 {margin-top: 1rem;}
+
 /*=============== SEO & PERFORMANCE SECTION ===============*/
+#seo p {margin-bottom: 1rem;}
+#seo h3 {margin-top: 1rem;}
+
 #wrapper img {
   position: static;
   width: 80%;
@@ -1119,11 +1130,16 @@ h1 {font-size: var(--h1-font-size);}
   font-weight: var(--font-semi-bold);
 }
 
+/*=============== LESSONS LEARNED SECTION ===============*/
+#lessons p {margin-bottom: 1rem;}
+#lessons p:last-child {margin-block: 1rem 0;}
+#lessons h3 {margin-top: 1rem;}
+
 /*=============== RESOURCES SECTION ===============*/
-#wrapper .links {
-  flex-direction: column; 
-  text-decoration: underline wavy var(--yellow) !important;
-}
+#resources p {margin-bottom: 1rem;}
+#resources p:last-child {margin-block: 1rem 0;}
+#resources .links {flex-direction: column;}
+#resources .projects__link {width: max-content;}
 
 /*=============== FOOTER ===============*/
 .footer {
@@ -1293,8 +1309,8 @@ h1 {font-size: var(--h1-font-size);}
     grid-column: span 1 / -1;
     margin-top: 130px;
     padding: .5rem;
-    border-left: 2px solid var(--yellow);
-    background-color: hsl(0, 0%, 85%);
+    border-left: 2px solid var(--text-color-light);
+    background-color: var(--container-color);
   }
   #wrapper img {width: 100% !important;}
 }
@@ -1305,9 +1321,7 @@ h1 {font-size: var(--h1-font-size);}
     margin-inline: auto;
   }
 
-  .section {
-    padding-block: 7rem 2rem;
-  }
+  .section {padding-block: 7rem 4rem;}
   .section__title-1::after, 
   .section__title-2::after {
     width: 70px;
