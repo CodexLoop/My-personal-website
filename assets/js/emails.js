@@ -9,7 +9,7 @@ const sendEmail = (e) =>{
    emailjs.sendForm('service_qtf15fe','template_y1zjaxq','#contact-form','GafzmVXQhZZcUZ_Ut')
       .then(() =>{
          // Show sent message
-         contactMessage.textContent = 'Message sent successfully ✅'
+         contactMessage.textContent = 'Message sent ✅ You will recieve an email within the next 24hrs.'
 
          // Remove message after five seconds
          setTimeout(() =>{
