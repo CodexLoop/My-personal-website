@@ -373,22 +373,22 @@
       </section>
 
       <!--===== PRICES =====-->
-      <section id="prices" class="section prices__section">
-         <h2 class="section__title-1">
+      <section id="prices" class="section prices__section" aria-labelledby="pricing-heading">
+         <h2 id="pricing-heading" class="section__title-1">
             Package Deals
          </h2>
          <div class="container prices__container">
             <div class="wrapper grid">
-               <div class="price__card grid">
+               <div class="price__card grid" role="region" aria-labelledby="starter">
                   <div class="heading">
-                     <h3>Starter Launch</h3>
+                     <h3 id="starter">Starter Launch</h3>
                      <p></p>
                   </div>
                   <div class="price">
                      <p>$</p>
                      <h3>149</h3>
                      <p>99</p>
-                     <p>monthly</p>
+                     <p>Once-off</p>
                   </div>
                   <ul>
                      <li> 1-page responsive site</li>
@@ -396,24 +396,28 @@
                      <li> GitHub repo</li>
                   </ul>
                   <div>
-                     <button type="submit" class="contact__button button">Click here</button>
+                     <a href="#contact">
+                        <button  type="submit" class="contact__button button">
+                           Lets build!
+                        </button>
+                     </a>
                      <p><!--Negotiable--></p>
                   </div>
                </div>
 
-               <div class="price__card grid">
+               <div class="price__card grid" role="region" aria-labelledby="figma-to-code">
                   <div class="popular">
                      <p>Popular</p>
                   </div>
                   <div class="heading">
-                     <h3>Figma-to-Code</h3>
+                     <h3 id="figma-to-code">Figma-to-Code</h3>
                      <p><!--Save 50%--></p>
                   </div>
                   <div class="price">
                      <p>$</p>
                      <h3>299</h3>
                      <p>99</p>
-                     <p>monthly</p>
+                     <p>Once-off</p>
                   </div>
                   <ul>
                      <li>
@@ -421,24 +425,30 @@
                         <br> 
                         (per-page based)
                      </li>
+                     <li>Seo basics</li>
+                     <li>a11y standards</li>
                   </ul>
                   <div>
-                     <button type="submit" class="contact__button button">Click here</button>
+                     <a href="#contact">
+                        <button  type="submit" class="contact__button button">
+                           Lets build!
+                        </button>
+                     </a>
                      <br>
                      <p>Negotiable</p>
                   </div>
                </div>
 
-               <div class="price__card grid">
+               <div class="price__card grid" role="region" aria-labelledby="growth-bundle">
                   <div class="heading">
-                     <h3>Growth Bundle</h3>
+                     <h3 id="growth-bundle">Growth Bundle</h3>
                      <p>Save 20%</p>
                   </div>
                   <div class="price">
                      <p>$</p>
                      <h3>599</h3>
                      <p>99</p>
-                     <p>monthly</p>
+                     <p>Once-off</p>
                   </div>
                   <ul>
                      <li> Planning + layout</li>
@@ -447,14 +457,19 @@
                      <li> Responsive dev</li>
                   </ul>
                   <div>
-                     <button type="submit" class="contact__button button">Click here</button>
-                     <p><!--Promotion applied!--></p>
+                     <a href="#contact">
+                        <button  type="submit" class="contact__button button">
+                           Lets build!
+                        </button>
+                     </a>
+                     <br>
+                     <p>Negotiable</p>
                   </div>
                </div>
 
-               <div class="price__card grid">
+               <div class="price__card grid" role="region" aria-labelledby="maintainance">
                   <div class="heading">
-                     <h3>Maintainance</h3>
+                     <h3 id="maintainance">Maintainance</h3>
                      <p><!--Save 50%--></p>
                   </div>
                   <div class="price">
@@ -469,13 +484,27 @@
                      <li> Basic changes</li>
                   </ul>
                   <div>
-                     <button type="submit" class="contact__button button">Click here</button>
+                     <a href="#contact">
+                        <button  type="submit" class="contact__button button">
+                           Lets build!
+                        </button>
+                     </a>
                      <p><!--Promotion applied!--></p>
                   </div>
                </div>
             </div>
          </div>
       </section>
+
+      <div class="wrapper" style="padding-bottom: 4rem;">
+         <h2 class="section__title-2">How it works</h4>
+         <ul class="about__list" style="width: max-content; margin: auto;">
+            <li>Choose a package</li>
+            <li>Reach out via the form or socials (preferably <a href="https://linkedin.com/in/mnqobi-thusi/">LinkedIn</a>)</li>
+            <li>We schedule a quick call or chat</li>
+            <li>I send an invoice and timeline</li>
+         </ul>
+      </div>
 
       <!--===== PROJECTS =====-->
       <section class="projects section" id="projects">
@@ -567,12 +596,12 @@
 
                <p class="contact__description-1">
                   I will read all emails. Send me any
-                  message you want and I'll get back to you.
+                  inquiries you have and I'll get back to you.
                </p>
 
                <p class="contact__description-2">
-                  I need your <b>Name</b> and <b>Email Address</b>, but
-                  you won't receive anything other than your reply.
+                  I need your <b>Name</b> and <b>Email Address</b>. I'm excited
+                  to hear from you!
                </p>
 
                <div class="geometric-box"></div>
@@ -624,7 +653,7 @@
                <div class="contact__social-data">
                   <div>
                      <p class="contact__social-description-1">
-                        Does not send emails
+                        Form misbehaving? Not to worry...
                      </p>
 
                      <p class="contact__social-description-2">
