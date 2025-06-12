@@ -388,6 +388,10 @@ body.dark-theme {
   width: 25%;
 }
 
+#contact::after {
+  display: none;
+}
+
 /*=============== HOME ===============*/
 .home__container {
   padding-top: 2rem;
