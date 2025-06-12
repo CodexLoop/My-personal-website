@@ -736,6 +736,91 @@ body.dark-theme {
   transform: translate(.75rem, .75rem);
 }
 
+/*=============== PRICE PACKAGES ===============*/
+.prices__section .wrapper{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 3rem;
+}
+
+#prices .price__card {
+  grid-template-rows: 70px min-content auto 85px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  justify-items: center;
+  padding-block: 2rem 2rem;
+  margin-block: 1rem 1rem;
+  border: 5px solid var(--container-color);
+  box-shadow: none;
+  transition: .3s box-shadow ease;
+}
+#prices .price__card:hover {
+  box-shadow: 8px 16px 12px var(--container-color);
+}
+
+#prices .popular {
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  left: 38%;
+  top: 3ch;
+  padding-block: 5px 5px;
+  transform: rotate(45deg);
+  background-color: var(--text-color-light);
+  color: var(--body-color);
+  font-weight: var(--font-semi-bold);
+}
+
+#prices .price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--container-color);
+  padding-block: 2rem 2rem;
+  font-style:italic;
+}
+
+#prices .heading {
+  line-height: 2;
+}
+#prices .heading p {
+  text-transform: uppercase;
+}
+#prices .heading h3 {
+  font-weight: var(--font-regular);
+}
+
+#prices .price h3 {
+  font-size: var(--biggest-font-size);
+}
+#prices .price p {
+  transform: translate(.4ch, 1.5ch);
+}
+#prices .price p:first-child {
+  transform: translateY(1.5ch);
+}
+#prices .price p:last-child {
+  width: 100%;
+  transform: translateY(-1ch);
+}
+
+#prices ul {
+  width: 80%;
+  text-align:
+}
+#prices ul > * + * {
+  border-top: 2px solid var(--container-color);
+}
+#prices li {
+  line-height: 3;
+}
+
+#prices button {
+  padding: .75rem 2rem;
+  text-transform: uppercase;
+}
+
 /*=============== PROJECTS ===============*/
 .projects {
   background-color: var(--container-color);
@@ -1326,7 +1411,7 @@ h1 {font-size: var(--h1-font-size);}
     margin-inline: auto;
   }
 
-  .section {padding-block: 7rem 4rem;}
+  .section {padding-block: 7rem 2rem;}
   .section__title-1::after, 
   .section__title-2::after {
     width: 70px;
@@ -1547,7 +1632,7 @@ h1 {font-size: var(--h1-font-size);}
   .services__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
-    padding-block: 3rem 5rem;
+    padding-block: 3rem 0;
   }
   .services__content {
     padding: 6.5rem 2rem 3.5rem;
