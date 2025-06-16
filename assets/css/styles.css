@@ -228,6 +228,47 @@ body.dark-theme {
   top: -5px;
 }
 
+.blog-toc {
+  margin-top: 2rem;
+  padding: .25rem 1rem .25rem 2rem;
+  border-left: 4px solid var(--text-color);
+  background-color: var(--container-color);
+  font-size: var(--normal-font-size);
+}
+.blog-toc ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2em;
+}
+.blog-toc li {
+  position: relative; 
+}
+.blog-toc li::after,
+.blog-toc li::before {
+  content: '';
+  position: absolute;
+  height: 65%;
+  width: 2px;
+  left: -1em;
+  transform: rotate(-45deg);
+  background-color: var(--text-color);
+}
+.blog-toc li::after {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+.blog-toc li:first-child::before,
+.blog-toc li:first-child::after {
+  display: none;
+}
+.blog-toc a {
+  color: var(--text-color);
+}
+.blog-toc a:hover {
+  text-decoration: underline wavy var(--first-color);
+}
+
+
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
@@ -1190,8 +1231,8 @@ h1 {font-size: var(--h1-font-size);}
 #wrapper .tip__left {display: none;}
 
 #wrapper .section {padding-block: 100px 0}
-#wrapper .section__title-1 {margin-left: 0;}
-#wrapper .section__title-2 {margin-left: 0;}
+#teamspark-blog .section__title-1 {margin-left: 0;}
+#teamspark-blog .section__title-2 {margin-left: 0;}
 
 #wrapper p, 
 #wrapper li {line-height: 1.8;}
