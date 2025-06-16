@@ -230,7 +230,7 @@ body.dark-theme {
 
 .blog-toc {
   margin: 2rem 0 0;
-  padding: .25rem 1rem .25rem 2rem;
+  padding: .75rem 1rem .75rem 2rem;
   border-left: 4px solid var(--text-color);
   background-color: var(--container-color);
   font-size: var(--normal-font-size);
@@ -243,6 +243,7 @@ body.dark-theme {
   flex-wrap: wrap;
   gap: 1rem 1ch;
   justify-items: baseline;
+  margin-left: -1.5em;
 }
 .blog-toc a {
   display: flex; 
@@ -251,12 +252,8 @@ body.dark-theme {
 .blog-toc svg {
   height: 16px;
   width: 16px;
-  fill: var(--text-color);
+  fill: var(--first-color);
 }
-/* .blog-toc li:first-child::before,
-.blog-toc li:first-child::after {
-  display: none;
-} */
 .blog-toc a {
   color: var(--text-color);
 }
