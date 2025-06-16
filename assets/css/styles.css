@@ -241,7 +241,7 @@ body.dark-theme {
 .blog-toc ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem 4rem;
+  gap: 1rem 1ch;
   justify-items: baseline;
 }
 .blog-toc a {
