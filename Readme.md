@@ -3,7 +3,7 @@
 You are free to view and learn from this code, but reuse, reproduction, or redistribution is not permitted without written permission.
 
 # Preview
-![preview](./assets/img/og_image.jpg "Preview")
+![preview](./assets/img/og_image.jpg)
 
 ---
 
