@@ -256,9 +256,10 @@ body.dark-theme {
 }
 .blog-toc a {
   color: var(--text-color);
+  transition: color .3s ease;
 }
 .blog-toc a:hover {
-  text-decoration: underline wavy var(--first-color);
+  color: var(--first-color);
 }
 
 
