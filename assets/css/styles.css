@@ -884,6 +884,10 @@ body.dark-theme {
   background-color: var(--black-color);
   mix-blend-mode: soft-light;
 }
+.projects__card:last-child .filter {
+  filter: invert(1);
+  mix-blend-mode:normal !important;
+}
 
 .projects__image {
   position: relative;
