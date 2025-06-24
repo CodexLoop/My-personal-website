@@ -3,6 +3,13 @@
 
 <head>
    <!-- Google tag (gtag.js) -->
+   <link rel="onload" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
+      onload="this.onload=null;
+      this.rel='stylesheet'">
+   <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap">
+   </noscript>
+   
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBQ0NDVZ0G"></script>
    <script>
       window.dataLayer = window.dataLayer || [];
@@ -17,7 +24,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
    <meta name="theme-color" content="#fc3do3">
-
    <meta name="description" content="mnqobithusi.dev is a branding website to showcase my work and services. Made with care and love by Mnqobi Thusi.">
 
    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -43,7 +49,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
    <!-- CSS -->
-   <link rel="stylesheet" href="assets/css/styles.min.css?v=1">
+   <link rel="stylesheet" href="assets/css/styles.css?v=1">
 
    <!-- Title -->
    <title>Mnqobi Thusi | Home</title>
@@ -515,8 +521,8 @@
          <div class="projects__container container grid">
             <article class="projects__card">
                <div class="projects__image">
-                  <img src="assets/img/TeamSpark_Website.png" alt="A preview of the TeamSpark website"
-                     class="projects__img">
+                  <div class="filter"></div>
+                  <img src="assets/img/TeamSpark_Website.png" alt="A preview of the TeamSpark website" class="projects__img">
 
                   <a title="Read blog" href="./blogs/teamspark-blogpost.html" class="projects__button button">
                      <i class="ri-arrow-right-up-line"></i>
@@ -549,8 +555,43 @@
                </div>
             </article>
 
-                        <article class="projects__card">
+            <article class="projects__card">
                <div class="projects__image">
+                  <div class="filter"></div>
+                  <img src="./assets/img/meet_og_image.jpg" alt="A preview of the Meet website" class="projects__img">
+
+                  <a title="Read blog" href="./blogs/meet-blogpost.html" class="projects__button button">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+               </div>
+
+               <div class="projects__content">
+                  <h3 class="projects__subtitle">HTML5 Website</h3>
+                  <h2 class="projects__title">Meet Website</h2>
+
+                  <p class="projects__description">
+                     <strong>Meet</strong> is a modern, fully responsive marketing site built to promote a fictional team collaboration platform. Based on a
+                     Frontend Mentor Pro Figma design, this project was developed as a design-to-code challenge with a strong focus on
+                     semantic HTML, accessibility best practices, SEO optimization, and performance-driven development.
+                  </p>
+               </div>
+
+               <div class="projects__buttons">
+                  <a title="View GitHub repository" href="https://github.com/CodexLoop/Meet-Landing-Page.git"
+                     target="_blank" class="projects__link">
+                     <i class="ri-github-line"></i> View repo
+                  </a>
+
+                  <a title="View live site" href="https://meetsoftware.netlify.app/" target="_blank"
+                     class="projects__link">
+                     <i class="ri-global-line"></i> View site
+                  </a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <div class="projects__image">
+                  <div class="filter"></div>
                   <img src="assets/img/project-1.jpg" alt="A preview of the Townbush website" class="projects__img">
 
                   <a title="Read blog post"  href="./404.html" class="projects__button button">
