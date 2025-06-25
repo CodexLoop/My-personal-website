@@ -1700,7 +1700,7 @@ h1 {font-size: var(--h1-font-size);}
 
   .services__container {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 5rem;
+    column-gap: 2.5rem;
     padding-block: 3rem 0;
   }
   .services__content {
