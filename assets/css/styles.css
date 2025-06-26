@@ -791,7 +791,7 @@ body.dark-theme {
   justify-items: center;
   padding-block: 2rem 2rem;
   margin-block: 1rem 1rem;
-  border: 4px solid var(--text-color);
+  border: 4px solid var(--black-color);
   box-shadow: none;
   background-color: var(--container-color);
   transition: .3s box-shadow ease;
@@ -808,8 +808,8 @@ body.dark-theme {
   top: 3ch;
   padding-block: 5px 5px;
   transform: rotate(45deg);
-  background-color: var(--text-color);
-  color: var(--body-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
   font-weight: var(--font-semi-bold);
 }
 
