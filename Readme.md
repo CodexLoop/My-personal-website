@@ -41,7 +41,7 @@ If any open-source code or resources are included in specific folders (e.g., `/p
 Want to work with me? Reach out here:
 
 - 🌐 Website: [mnqobithusi.dev](https://mnqobithusi.dev)
-- 📧 Email: [mnqobimvelas@gmail.com]
+- 📧 Email: [contact@mnqobithusi.dev]
 - 🧑🏾‍💻 GitHub: [github.com/mnqobithusi](https://github.com/CodexLoop)
 
 ---
