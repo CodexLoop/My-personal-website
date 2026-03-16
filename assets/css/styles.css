@@ -881,14 +881,6 @@ body.dark-theme {
   transition: background-color .4s;
 }
 
-.projects__card .filter {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--black-color);
-  mix-blend-mode: soft-light;
-}
-
 .projects__image {
   position: relative;
   margin-bottom: .75rem;
